@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
+using Pulumi;
 
-namespace Pulumi.Command.Local
+namespace Mjeffryes.Command.Local
 {
     /// <summary>
     /// A local command to be executed.
@@ -303,7 +304,7 @@ namespace Pulumi.Command.Local
         /// outputs as secret via 'additionalSecretOutputs'. Defaults to logging both stdout and stderr.
         /// </summary>
         [Output("logging")]
-        public Output<Pulumi.Command.Local.Logging?> Logging { get; private set; } = null!;
+        public Output<Mjeffryes.Command.Local.Logging?> Logging { get; private set; } = null!;
 
         /// <summary>
         /// The standard error of the command's process
@@ -548,7 +549,7 @@ namespace Pulumi.Command.Local
         /// outputs as secret via 'additionalSecretOutputs'. Defaults to logging both stdout and stderr.
         /// </summary>
         [Input("logging")]
-        public Input<Pulumi.Command.Local.Logging>? Logging { get; set; }
+        public Input<Mjeffryes.Command.Local.Logging>? Logging { get; set; }
 
         /// <summary>
         /// Pass a string to the command's process as standard in

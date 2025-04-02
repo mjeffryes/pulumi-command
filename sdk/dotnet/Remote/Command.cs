@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
+using Pulumi;
 
-namespace Pulumi.Command.Remote
+namespace Mjeffryes.Command.Remote
 {
     /// <summary>
     /// A command to run on a remote host. The connection is established via ssh.
@@ -141,7 +142,7 @@ namespace Pulumi.Command.Remote
         /// outputs as secret via 'additionalSecretOutputs'. Defaults to logging both stdout and stderr.
         /// </summary>
         [Output("logging")]
-        public Output<Pulumi.Command.Remote.Logging?> Logging { get; private set; } = null!;
+        public Output<Mjeffryes.Command.Remote.Logging?> Logging { get; private set; } = null!;
 
         /// <summary>
         /// The standard error of the command's process
@@ -291,7 +292,7 @@ namespace Pulumi.Command.Remote
         /// outputs as secret via 'additionalSecretOutputs'. Defaults to logging both stdout and stderr.
         /// </summary>
         [Input("logging")]
-        public Input<Pulumi.Command.Remote.Logging>? Logging { get; set; }
+        public Input<Mjeffryes.Command.Remote.Logging>? Logging { get; set; }
 
         /// <summary>
         /// Pass a string to the command's process as standard in

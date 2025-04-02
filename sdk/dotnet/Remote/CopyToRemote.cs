@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
+using Pulumi;
 
-namespace Pulumi.Command.Remote
+namespace Mjeffryes.Command.Remote
 {
     /// <summary>
     /// Copy an Asset or Archive to a remote host.

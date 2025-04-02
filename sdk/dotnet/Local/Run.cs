@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
+using Pulumi;
 
-namespace Pulumi.Command.Local
+namespace Mjeffryes.Command.Local
 {
     public static class Run
     {
@@ -186,7 +187,7 @@ namespace Pulumi.Command.Local
         /// outputs as secret via 'additionalSecretOutputs'. Defaults to logging both stdout and stderr.
         /// </summary>
         [Input("logging")]
-        public Pulumi.Command.Local.Logging? Logging { get; set; }
+        public Mjeffryes.Command.Local.Logging? Logging { get; set; }
 
         /// <summary>
         /// Pass a string to the command's process as standard in
@@ -353,7 +354,7 @@ namespace Pulumi.Command.Local
         /// outputs as secret via 'additionalSecretOutputs'. Defaults to logging both stdout and stderr.
         /// </summary>
         [Input("logging")]
-        public Input<Pulumi.Command.Local.Logging>? Logging { get; set; }
+        public Input<Mjeffryes.Command.Local.Logging>? Logging { get; set; }
 
         /// <summary>
         /// Pass a string to the command's process as standard in
@@ -492,7 +493,7 @@ namespace Pulumi.Command.Local
         /// stdout and stderr as outputs. If there might be secrets in the output, you can disable logging here and mark the
         /// outputs as secret via 'additionalSecretOutputs'. Defaults to logging both stdout and stderr.
         /// </summary>
-        public readonly Pulumi.Command.Local.Logging? Logging;
+        public readonly Mjeffryes.Command.Local.Logging? Logging;
         /// <summary>
         /// The standard error of the command's process
         /// </summary>
@@ -526,7 +527,7 @@ namespace Pulumi.Command.Local
 
             ImmutableArray<string> interpreter,
 
-            Pulumi.Command.Local.Logging? logging,
+            Mjeffryes.Command.Local.Logging? logging,
 
             string stderr,
 

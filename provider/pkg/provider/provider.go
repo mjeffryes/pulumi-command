@@ -43,8 +43,9 @@ func NewProvider() p.Provider {
 			Homepage:   "https://pulumi.com",
 			License:    "Apache-2.0",
 			Repository: "https://github.com/pulumi/pulumi-command",
-			Publisher:  "Pulumi",
+			Publisher:  "Mjeffryes",
 			LogoURL:    "https://raw.githubusercontent.com/pulumi/pulumi-command/master/assets/logo.svg",
+			Namespace:  "mjeffryes",
 			// This contains language specific details for generating the provider's SDKs
 			LanguageMap: map[string]any{
 				"csharp": map[string]any{
