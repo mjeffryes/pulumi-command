@@ -1,0 +1,10 @@
+name: publish_sdks
+description: publishes SDKs
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://www.pulumi.com/ai/api/project/af35df70-47fd-4a3a-b37a-fd0db09f43f4.zip
