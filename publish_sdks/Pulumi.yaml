@@ -4,6 +4,7 @@ runtime:
   name: nodejs
   options:
     packagemanager: npm
+    nodeargs: "--loader ts-node/esm --no-warnings"
 config:
   pulumi:tags:
     value:

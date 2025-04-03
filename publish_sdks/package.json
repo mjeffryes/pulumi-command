@@ -1,11 +1,13 @@
 {
     "name": "publish_sdks",
     "main": "index.ts",
+    "type": "module",
     "devDependencies": {
         "@types/node": "^18",
         "typescript": "^5.0.0"
     },
     "dependencies": {
+        "ts-node": "^10.4.0",
         "@pulumi/command": "^1.0.2",
         "@pulumi/pulumi": "^3.113.0"
     },
